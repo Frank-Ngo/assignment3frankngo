@@ -1,0 +1,32 @@
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #212121;
+  }
+  
+  .top-nav a {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .shop-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+  }
+  
+  .services h2,
+  .new-arrivals h2 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    color: #9B6634;
+  }
+  
+  .service-card {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    color: #68380A;
+  }
+  
