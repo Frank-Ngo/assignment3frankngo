@@ -1,0 +1,31 @@
+body {
+    background-color: #FFF8F5; 
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #FFECE8;
+  }
+  
+  .top-nav {
+    background-color: #FFEBEB;
+  }
+  
+  .hero {
+    background-color: #FFF3ED;
+  }
+  
+  .services {
+    background-color: #FFF8F5;
+  }
+  
+  .new-arrivals {
+    background-color: #FFF8F5;
+  }
+  
+  .bottom-nav {
+    background-color: #FFEBEB;
+  }
+  
