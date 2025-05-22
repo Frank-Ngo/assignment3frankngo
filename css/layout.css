@@ -42,3 +42,23 @@
     color: #000;
   }
   
+  .arrow img {
+  width: 32px;   
+  height: auto;  
+}
+
+.visit-store {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFF3ED;
+  padding: 3rem 2rem;
+}
+
+.visit-left {
+  max-width: 60%;
+}
+
+.visit-right {
+  flex-shrink: 0;
+}
