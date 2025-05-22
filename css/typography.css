@@ -14,6 +14,7 @@ header h1 {
   .shop-btn {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    font-size: 2.8rem;
     color: #FFFFFF;
   }
   
@@ -30,3 +31,21 @@ header h1 {
     color: #68380A;
   }
   
+.store-subtext {
+  font-size: 1.1rem;
+  font-family: 'Manrope', sans-serif;
+  color: #212121;
+}
+
+.visit-left h2 {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: #212121;
+}
+
+.nav-links li a {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+}
