@@ -116,11 +116,36 @@ transform: scale(1.03);
 }
 
 
-.service-card p {
-  margin-top: 1rem;
-  font-family: 'Manrope', sans-serif;
-  font-weight: 700;
-  color: #68380A;
-  font-size: 1.5rem;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+
+
+.new-arrivals {
+  margin-top: -4.5rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  background-color: #fff9f5;
+}
+
+
+.product-cards {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 2px solid #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
