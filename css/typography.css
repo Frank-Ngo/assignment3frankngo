@@ -30,13 +30,7 @@ header h1 {
   font-size: 3rem;
 }
 
-.new-arrivals h2 {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 700;
-  color: #9B6634;
-}
 
-  
 .service-card {
   font-family: 'Manrope', sans-serif;
   font-weight: 700;
@@ -44,9 +38,13 @@ header h1 {
 }
 
 .service-card p {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  color: #68380A;
   font-size: 2rem;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
 }
-  
+
 .store-subtext {
   font-size: 1.1rem;
   font-family: 'Manrope', sans-serif;
@@ -65,3 +63,21 @@ header h1 {
   text-decoration: none;
   color: #000;
 }
+
+.new-arrivals h2 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #9B6634;
+}
+
+.product-card p {
+  margin-top: 1rem;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #68380A;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+  
