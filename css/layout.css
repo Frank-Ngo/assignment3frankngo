@@ -219,7 +219,7 @@ html {
 }
 
 .product-tabs-bar {
-  background-color: #FFEBEB;
+  background-color: #FFECE8;
   padding: 1rem 3rem 1rem;
   border-top: 2px solid black;
   font-family: 'Manrope', sans-serif;
@@ -246,4 +246,34 @@ html {
 .header h1 a {
   text-decoration: none;
   color: inherit;
+}
+
+.filters-bar {
+  background-color: #fff4f4; 
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: flex-end;
+  border-bottom: 1px solid #ddd;
+}
+
+.filter-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.filter-icon img {
+  width: 16px;
+  height: 16px;
+  opacity: 0.6;
+}
+
+.filter-option {
+  cursor: pointer;
+}
+
+.filter-option:hover {
+  text-decoration: underline;
 }
