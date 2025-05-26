@@ -213,3 +213,37 @@ transform: scale(1.03);
   font-size: 0.9rem;
   margin-top: 1rem;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.product-tabs-bar {
+  background-color: #FFEBEB;
+  padding: 1rem 3rem 1rem;
+  border-top: 2px solid black;
+  font-family: 'Manrope', sans-serif;
+}
+
+.product-tabs ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between; 
+  padding: 0 2rem; 
+  margin: 0;
+}
+
+.product-tabs li {
+  cursor: pointer;
+  padding-bottom: 0.5rem;
+}
+
+.product-tabs .active {
+  color: #ef5c5c;
+  border-bottom: 2px solid #ef5c5c;
+}
+
+.header h1 a {
+  text-decoration: none;
+  color: inherit;
+}

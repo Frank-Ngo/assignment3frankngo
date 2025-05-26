@@ -7,21 +7,22 @@ header h1 {
   margin: 0;
 }
 
+
   
-  .top-nav a {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 700;
-    color: #000000;
-    text-decoration: none;
-    font-size: 1.5rem;
-  }
-  
-  .shop-btn {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 2.8rem;
-    color: #FFFFFF;
-  }
+.top-nav a {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.shop-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 2.8rem;
+  color: #FFFFFF;
+}
   
 .services h2 {
   font-family: 'Manrope', sans-serif;
@@ -81,3 +82,11 @@ header h1 {
 }
 
   
+.product-tabs ul {
+  font-size: 1.5rem;
+  font-weight: 700;  
+}
+
+.product-tabs-bar {
+  font-family: 'Manrope', sans-serif;
+}
