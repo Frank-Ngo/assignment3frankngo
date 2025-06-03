@@ -1,4 +1,11 @@
 
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
 .header-top {
   display: flex;
   justify-content: space-between;
@@ -327,7 +334,6 @@ html {
 }
 
 
-
 .product-info .product-name {
   color: #B81919;
   min-height: 2.5rem;
@@ -356,3 +362,83 @@ html {
 }
 
 
+.product-detail {
+  background-color: #fff9f5;
+  padding: 3rem 0;
+}
+
+.product-detail-container {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem 12rem;
+  align-items: center;
+}
+
+
+.product-detail-image img {
+  width: 100%;
+  max-width: 450px;   /* control max size */
+  height: auto;
+  max-height: 450px;  /* optional, also limit height */
+  object-fit: contain;
+}
+
+
+.product-detail-info {
+  flex: 1;  
+  max-width: none; 
+}
+
+.product-detail-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #B81919;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+}
+
+.product-detail-price {
+  font-size: 6rem;  
+  font-weight: 700;
+  color: #212121;
+  margin-bottom: 1rem;
+}
+
+
+.product-detail-rating {
+    font-size: 1.2rem;
+    color: #212121;
+    margin-bottom: -5.5rem; 
+}
+
+
+.product-detail-description {
+  font-size: 1.1rem;
+  color: #BC9999;
+  margin-bottom: 2rem;
+}
+
+.product-detail-info .add-btn {
+  padding: 1.2rem 3rem;  
+  font-size: 1.2rem;
+  background-color: #B87C7C;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.product-detail-info .add-btn:hover {
+  transform: scale(1.05);
+  background-color: #c88b84;
+}
+
+
+.product-detail-image {
+  flex: 1;  
+}
+.product-detail-info {
+  flex: 1;  
+}
