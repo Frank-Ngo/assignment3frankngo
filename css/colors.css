@@ -13,19 +13,306 @@ header {
   background-color: #FFEBEB;
 }
 
+.top-nav a {
+  color: #000000;
+}
+
+
+
+.header h1 a {
+  color: inherit;
+}
+
 .hero {
   background-color: #FFF3ED;
 }
 
+.shop-btn {
+  color: #FFFFFF;
+}
+
 .services {
-  background-color: #FFF8F5;
+  background-color: #fff9f5;
+}
+
+.services h2 {
+  color: #9B6634;
 }
 
 .new-arrivals {
-  background-color: #FFF8F5;
+  background-color: #fff9f5;
+}
+
+.service-card {
+  color: #68380A;
+}
+
+.service-card p {
+  color: #68380A;
+}
+
+
+.visit-left h2 {
+  color: #212121;
+}
+
+.nav-links li a {
+  color: #000;
+}
+
+.new-arrivals h2 {
+  color: #9B6634;
+}
+
+.product-card p {
+  color: #68380A;
 }
 
 .bottom-nav {
   background-color: #FFEBEB;
+}
+
+
+.header-top {
+    background-color: #FFECE8;
+}
+
+
+.visit-store {
+    background-color: #FFF3ED;
+}
+
+.services {
+    background-color: #fff9f5;
+}
+
+a {
+  color:inherit;
+}
+
+
+.search-input {
+background-color: #e9dcd9;
+}
+
+.visit-store {
+background-color: #FFF3ED;
+}
+
+
+.shop-btn {
+background-color: #EB988E;
+color: white;
+}
+
+.footer {
+  background-color: #FFF3ED;
+  color: #68380A;
+}
+
+.product-tabs-bar {
+  background-color: #FFECE8;
+}
+
+.product-tabs .active {
+  color: #ef5c5c;
+}
+
+.filters-bar {
+  background-color: #fff9f5;
+}
+
+.product-section {
+  background-color: #fff9f5;
+}
+
+.product-card {
+  background-color: #FFF7F4;
+}
+
+.product-image {
+  background-color: #ffffff;
+  border: 2px solid black;
+
+}
+
+
+.product-card img {
+  border: 2px solid #000;
+}
+
+
+.product-tabs .active {
+  border-bottom: 2px solid #ef5c5c;
+}
+
+.product-info .product-price,
+.product-info .product-rating {
+  color: black;
+}
+
+
+.product-info .product-name {
+  color: #B81919;
+}
+
+.add-btn {
+  background-color: #B87C7C;
+  color: white;
+}
+
+.add-btn:hover {
+  background-color: #c88b84;
+}
+
+.product-detail {
+  background-color: #fff9f5;
+}
+
+
+.product-detail-title {
+  color: #B81919;
+}
+
+.product-detail-price {
+  color: #212121;
+}
+
+.product-detail-rating {
+    color: #212121;
+}
+
+.product-detail-description {
+  color: #BC9999;
+}
+
+
+.product-detail-info .add-btn {
+  background-color: #B87C7C;
+  color: white;
+
+}
+
+.product-detail-info .add-btn:hover {
+  background-color: #c88b84;
+}
+
+.cart-section {
+  background-color: #fff9f5;  
+}
+
+.cart-item {
+  border: 2px solid #ddd;
+}
+
+
+.cart-item-name {
+  color: #B81919;
+}
+
+
+.cart-item-image {
+  border: 2px solid #B81919;
+}
+
+
+
+.qty-btn {
+  background-color: #F0C0C0;
+}
+
+.discount-code {
+
+  background-color: #e7e1df;
+
+}
+
+
+.discount-code button {
+  background-color: #c5b4b1;
+
+}
+
+.final-total {
+  background-color: #FFD3D3;
+
+}
+
+.checkout-btn {
+
+  background-color: #fecbcb;
+  color: #F36161;
+  border: 2px solid #d15858;
+
+
+}
+
+.checkout-btn:hover {
+  background-color: #ffdede;
+}
+
+.shipping-info {
+  background-color: #f9f9f9;
+
+}
+
+.payment-option {
+
+  background-color: #d9d9d9;
+
+}
+
+.payment-option .circle {
+
+  background-color: white;
+  border: 2px solid #aaa;
+
+}
+
+.card-details input {
+  background-color: #e7e1df;
+}
+
+.checkout-item {
+  border: 2px solid #ddd;
+}
+
+
+.checkout-item-image {
+  border: 2px solid #B81919;
+}
+
+.checkout-item-name {
+
+  color: #B81919;
+}
+
+.checkout-item-price {
+
+  color: black;
+}
+
+.order-summary {
+  background-color: #FFF7F0;
+
+
+}
+
+.confirmation-subtext {
+  color: #999;
+
+}
+
+
+.confirm-btn {
+  color: #d15858;
+  background-color: #fecbcb;
+  border: 2px solid #d15858;
+
+
+}
+
+.confirm-btn:hover {
+  background-color: #ffdede;
 }
 
