@@ -13,76 +13,79 @@
   <!-- importing fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=Montserrat:wght@500;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
 
-</head>
-<body>
-  <header class="header">
-    <div class="header-top">
-      <h1><a href="index.html">Maxx Music</a></h1>
-      <div class="header-right">
-        <div class="search-container">
-          <input type="text" class="search-input" placeholder="Search" />
-          <img src="assets/icons/search.svg" alt="Search" class="search-icon" />
-        </div>
-        <a href="#"><img src="assets/icons/user.svg" alt="User" /></a>
-        <a href="#"><img src="assets/icons/cart.svg" alt="Cart" /></a>
-        <a href="#"><img src="assets/icons/bookmark.svg" alt="Bookmark" /></a>
-      </div>
-    </div>
-  
-    </header>
 
-    <main class="checkout-section">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header-top">
+    <h1><a href="index.html">Maxx Music</a></h1>
+    <div class="header-right">
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search" />
+        <img src="assets/icons/search.svg" alt="Search" class="search-icon" />
+      </div>
+      <a href="#"><img src="assets/icons/user.svg" alt="User" /></a>
+      <a href="#"><img src="assets/icons/cart.svg" alt="Cart" /></a>
+      <a href="#"><img src="assets/icons/bookmark.svg" alt="Bookmark" /></a>
+    </div>
+  </div>
+</header>
+
+<main class="checkout-section">
 
   <h2 class="checkout-title">CONFIRMATION</h2>
 
+  <div class="confirmation-content">
 
-<div class="confirmation-content">
+    <!-- LEFT SIDE -->
+    <div class="confirmation-left">
+      <img src="assets/images/confirmtick.png" alt="Payment Successful" class="confirmation-tick" />
 
-  <!-- LEFT SIDE -->
-  <div class="confirmation-left">
-    <img src="assets/images/confirmtick.png" alt="Payment Successful" class="confirmation-tick" />
-
-    <div class="confirmation-text">
-      <p class="confirmation-title">Payment Successful!</p>
-      <p class="confirmation-subtext">
-        Thank you for your order.<br>
-        Your order 69420 is successfully placed<br>
-        You will receive an email confirmation
-      </p>
-    </div>
-  </div>
-
-  <!-- RIGHT SIDE -->
-  <div class="confirmation-right">
-
-    <div class="order-summary">
-      <div class="order-row">
-        <span>Estimated delivery date:</span>
-        <span>15th June 2025</span>
-      </div>
-      <div class="order-row">
-        <span>Payment Method</span>
-        <span>Credit Card</span>
-      </div>
-      <div class="order-row">
-        <span>Item Total</span>
-        <span>$1990 AUD</span>
-      </div>
-      <div class="order-row">
-        <span>Discount</span>
-        <span>$20 AUD</span>
-      </div>
-      <div class="order-row">
-        <span>Total</span>
-        <span>$1970 AUD</span>
+      <div class="confirmation-text">
+        <p class="confirmation-title">Payment Successful!</p>
+        <p class="confirmation-subtext">
+          Thank you for your order.<br>
+          Your order number is: <span id="order-number"></span><br>
+          You will receive an email confirmation
+        </p>
       </div>
     </div>
 
-    <a href="index.html" class="confirm-btn">Continue Shopping</a>
+    <!-- RIGHT SIDE -->
+    <div class="confirmation-right">
+
+      <div class="order-summary">
+        <div class="order-row">
+          <span>Estimated delivery date:</span>
+          <span>15th June 2025</span>
+        </div>
+        <div class="order-row">
+          <span>Payment Method</span>
+          <span>Credit Card</span>
+        </div>
+        <div class="order-row">
+          <span>Item Total</span>
+          <span>$1990 AUD</span>
+        </div>
+        <div class="order-row">
+          <span>Discount</span>
+          <span>$20 AUD</span>
+        </div>
+        <div class="order-row">
+          <span>Total</span>
+          <span>$1970 AUD</span>
+        </div>
+      </div>
+
+      <a href="index.html" class="confirm-btn">Continue Shopping</a>
+
+    </div>
 
   </div>
 
-</div>
+</main>
 
 <footer id="contact" class="footer">
   <div class="footer-section contact">
@@ -102,7 +105,6 @@
   </div>
 </footer>
 
-
-</main>
+  <script src="js/confirmation.js"></script>
 </body>
 </html>

@@ -499,6 +499,7 @@ html {
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   cursor: pointer;
+  margin-top: 1rem;
 }
 
 .checkout-btn:hover {
@@ -574,15 +575,15 @@ html {
   align-items: center;
   padding: 1rem 1.5rem;
   border-radius: 8px;
-  font-size: 1rem;
   cursor: pointer;
+  margin-bottom: 1rem; 
 }
 
-.payment-option .circle {
+.payment-option input[type="radio"] {
   width: 20px;
   height: 20px;
-  border-radius: 50%;
 }
+
 
 .card-details {
   display: flex;
@@ -598,13 +599,19 @@ html {
 }
 
 .card-details-row {
-  display: flex;
-  gap: 1rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.card-details-row > div {
+    flex: 1;
 }
 
 .card-details-row input {
-  flex: 1;
+    width: 100%;
+    box-sizing: border-box;
 }
+
 
 
 .checkout-item {
@@ -697,3 +704,7 @@ html {
   transform: scale(1.03);
 }
 
+
+.error-message {
+  margin-top: 0.25rem;
+}

@@ -262,3 +262,7 @@ header h1 {
 
   font-family: 'Manrope', sans-serif;
 }
+
+.error-message {
+  font-size: 0.9rem;
+}

@@ -262,6 +262,12 @@ color: white;
 
 }
 
+.input-error {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+}
+
+
 .payment-option .circle {
 
   background-color: white;
@@ -316,3 +322,11 @@ color: white;
   background-color: #ffdede;
 }
 
+.input-error {
+  border: 2px solid red !important;
+  background-color: #ffe6e6;
+}
+
+.error-message {
+  color: red;
+}
