@@ -39,3 +39,85 @@ function addToCart(product) {
 }
 
 document.addEventListener('DOMContentLoaded', updateCartCount);
+
+document.addEventListener('DOMContentLoaded', function() {
+    const priceFilter = document.getElementById('filter-price');
+    const bestSellingFilter = document.getElementById('filter-best-selling');
+    const topRatedFilter = document.getElementById('filter-top-rated');
+
+    if (priceFilter) {
+        priceFilter.addEventListener('click', sortProductsByPrice);
+    }
+    if (bestSellingFilter) {
+        bestSellingFilter.addEventListener('click', sortProductsByBestSelling);
+    }
+    if (topRatedFilter) {
+        topRatedFilter.addEventListener('click', sortProductsByTopRated);
+    }
+});
+
+function sortProductsByPrice() {
+    const productCards = Array.from(document.querySelectorAll('.product-card'));
+    const productSection = document.querySelector('.product-cards');
+
+    productCards.sort((a, b) => {
+        const priceA = parseFloat(a.querySelector('.product-price').textContent.replace('$', ''));
+        const priceB = parseFloat(b.querySelector('.product-price').textContent.replace('$', ''));
+        return priceA - priceB;
+    });
+
+    productSection.innerHTML = '';
+    productCards.forEach(card => {
+        productSection.appendChild(card);
+    });
+}
+
+function sortProductsByBestSelling() {
+    const productCards = Array.from(document.querySelectorAll('.product-card'));
+    const productSection = document.querySelector('.product-cards');
+
+    productCards.sort((a, b) => {
+        const reviewsA = parseInt(a.querySelector('.product-rating').textContent.match(/\((\d+) reviews\)/)[1]);
+        const reviewsB = parseInt(b.querySelector('.product-rating').textContent.match(/\((\d+) reviews\)/)[1]);
+        return reviewsB - reviewsA; // descending
+    });
+
+    productSection.innerHTML = '';
+    productCards.forEach(card => {
+        productSection.appendChild(card);
+    });
+}
+
+function sortProductsByTopRated() {
+    const productCards = Array.from(document.querySelectorAll('.product-card'));
+    const productSection = document.querySelector('.product-cards');
+
+    productCards.sort((a, b) => {
+        const ratingA = parseFloat(a.querySelector('.product-rating').textContent.match(/([\d.]+)\/5/)[1]);
+        const ratingB = parseFloat(b.querySelector('.product-rating').textContent.match(/([\d.]+)\/5/)[1]);
+        return ratingB - ratingA; // descending
+    });
+
+    productSection.innerHTML = '';
+    productCards.forEach(card => {
+        productSection.appendChild(card);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.querySelector('.search-input');
+    const productSection = document.querySelector('.product-cards');
+
+    if (searchInput && productSection) {
+        searchInput.addEventListener('input', function() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const productCards = document.querySelectorAll('.product-card');
+
+            productCards.forEach(card => {
+                const name = card.querySelector('.product-name').textContent.toLowerCase();
+                card.style.display = name.includes(searchTerm) ? '' : 'none';
+            });
+        });
+    }
+});
+
