@@ -1,3 +1,5 @@
+let total = 0;
+
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('confirm-order-btn').addEventListener('click', function (event) {
         event.preventDefault();
@@ -55,8 +57,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // If everything is valid then lets go to confirmation page
         if (isValid) {
+            const selectedPaymentMethod = document.querySelector('input[name="payment-method"]:checked');
+            const paymentMethod = selectedPaymentMethod ? selectedPaymentMethod.value : 'Unknown';
+
+            localStorage.setItem('paymentMethod', paymentMethod);
+            localStorage.setItem('finalTotal', total + 50);  
             window.location.href = 'confirmation.html';
         }
+
     });
 });
 
@@ -77,7 +85,7 @@ function displayPaymentCart() {
         return;
     }
 
-    let total = 0;
+    total = 0;
 
     cart.forEach(item => {
         const itemDiv = document.createElement('div');
