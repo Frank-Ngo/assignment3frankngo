@@ -24,7 +24,10 @@
           <img src="assets/icons/search.svg" alt="Search" class="search-icon" />
         </div>
         <a href="#"><img src="assets/icons/user.svg" alt="User" /></a>
-        <a href="#"><img src="assets/icons/cart.svg" alt="Cart" /></a>
+        <a href="cart.html">
+          <img src="assets/icons/cart.svg" alt="Cart" />
+          <span id="cart-count">0</span>
+        </a>
         <a href="#"><img src="assets/icons/bookmark.svg" alt="Bookmark" /></a>
       </div>
     </div>
@@ -66,7 +69,7 @@
         <p class="product-price">$1990</p>
         <p class="product-rating">4.5/5 (290 reviews)</p>
       </div>
-      <button class="add-btn">Add</button>
+      <button class="add-btn" onclick="addToCart({ id: 1, name: 'Fidel Guitar', price: 1990, image: 'assets/images/fidelguitar.png' })">Add</button>
     </div>
 
   <div class="product-card">
@@ -80,7 +83,7 @@
       <p class="product-price">$2500</p>
       <p class="product-rating">4.7/5 (320 reviews)</p>
     </div>
-    <button class="add-btn">Add</button>
+    <button class="add-btn" onclick="addToCart({ id: 2, name: 'King Crimson Guitar', price: 2500, image: 'assets/images/kingcrimson.png' })">Add</button>
   </div>
 
   <div class="product-card">
@@ -94,7 +97,8 @@
       <p class="product-price">$2700</p>
       <p class="product-rating">4.9/5 (400 reviews)</p>
     </div>
-    <button class="add-btn">Add</button>
+    <button class="add-btn" onclick="addToCart({ id: 3, name: 'Star Platinum Requiem', price: 2700, image: 'assets/images/starplatinum.png' })">Add</button>
+
   </div>
 
 

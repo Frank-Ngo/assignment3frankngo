@@ -24,7 +24,10 @@
           <img src="assets/icons/search.svg" alt="Search" class="search-icon" />
         </div>
         <a href="#"><img src="assets/icons/user.svg" alt="User" /></a>
-        <a href="#"><img src="assets/icons/cart.svg" alt="Cart" /></a>
+        <a href="cart.html">
+          <img src="assets/icons/cart.svg" alt="Cart" />
+          <span id="cart-count">0</span>
+        </a>
         <a href="#"><img src="assets/icons/bookmark.svg" alt="Bookmark" /></a>
       </div>
     </div>
@@ -45,17 +48,18 @@
   <div class="product-detail-container">
 
     <div class="product-detail-image">
-      <img src="assets/images/fidelguitar.png" alt="Fidel Guitar">
+      <img src="assets/images/kingcrimson.png" alt="King Crimson 3rd Edition">
     </div>
 
     <div class="product-detail-info">
-      <h2 class="product-detail-title">Fidel Guitar</h2>
-      <p class="product-detail-rating">4.5/5 (290 reviews) ⭐⭐⭐⭐✰</p>
-      <p class="product-detail-price">$1990</p>
+      <h2 class="product-detail-title">King Crimson 3rd Edition</h2>
+      <p class="product-detail-rating">4.8/5 (45 reviews) ⭐⭐⭐⭐✰</p>
+      <p class="product-detail-price">$1890</p>
       <p class="product-detail-description">
-        The Fidel Guitar delivers rich, vibrant tones with exceptional clarity and sustain. 
+        An elegant ivory design with vintage flair and sharp tone. Perfect for refined players with a bold edge.
       </p>
-      <button class="add-btn">Add to Cart</button>
+      <button class="add-btn" onclick="addToCart({ id: 2, name: 'King Crimson Guitar', price: 2500, image: 'assets/images/kingcrimson.png' })">Add to Cart</button>
+
     </div>
 
   </div>
@@ -79,5 +83,6 @@
   </div>
 </footer>
 
+<script src="js/main.js"></script>
 
 </body>
