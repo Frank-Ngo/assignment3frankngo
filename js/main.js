@@ -1,3 +1,15 @@
+function showToast(message, type = 'success') {
+    const toast = document.getElementById('toast');
+    toast.textContent = message;
+    toast.className = `show ${type}`;
+
+    // auto-hide after 3 seconds
+    setTimeout(() => {
+        toast.className = '';
+    }, 3000);
+}
+
+
 function updateCartCount() {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     let countElement = document.getElementById('cart-count');
@@ -16,13 +28,13 @@ function addToCart(product) {
     let existingItem = cart.find(item => item.id === product.id);
 
     if (existingItem) {
-        alert(`${product.name} is already in your cart!`);
+        showToast(`${product.name} is already in your cart!`, 'error');
     } else {
-        product.quantity = 1; 
+        product.quantity = 1;
         cart.push(product);
         localStorage.setItem('cart', JSON.stringify(cart));
         updateCartCount();
-        alert(`${product.name} added to cart!`);
+        showToast(`${product.name} added to cart!`, 'success');
     }
 }
 

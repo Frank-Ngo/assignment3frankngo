@@ -42,66 +42,25 @@
     </nav>
   </header>
 
+  <div id="toast"></div>
+
+
   <main class="cart-section">
+
   <div class="cart-header">
-    <p class="cart-items-count">3 items</p>
+    <p class="cart-items-count">X items</p> 
     <h2 class="cart-title">MY CART</h2>
   </div>
 
-  <div class="cart-item">
-  <div class="cart-item-left">
-    <img src="assets/images/product1.png" alt="Star Platinum Requiem" class="cart-item-image" />
-    <div class="cart-item-info">
-      <p class="cart-item-name">Star Platinum Requiem</p>
-      <p class="cart-item-qty">Qty: 1 <span class="qty-star">⭐</span> 4.5/5</p>
-      <div class="cart-qty-controls">
-        <button class="qty-btn">+</button>
-        <span class="qty-number">1</span>
-        <button class="qty-btn">-</button>
-      </div>
-    </div>
-  </div>
-  <p class="cart-item-price">$1990</p>
-</div>
 
-  <div class="cart-item">
-    <div class="cart-item-left">
-      <img src="assets/images/kingcrimson.png" alt="King Crimson 3rd Edition" class="cart-item-image" />
-      <div class="cart-item-info">
-        <h3 class="cart-item-name">King Crimson 3rd Edition</h3>
-        <p class="cart-item-qty">Qty: 1 <span class="qty-star">⭐</span> 4.8/5</p>
-        <div class="cart-qty-controls">
-          <button class="qty-btn">+</button>
-          <span class="qty-number">1</span>
-          <button class="qty-btn">-</button>
-        </div>
-      </div>
-    </div>
-    <div class="cart-item-price">$3000</div>
-  </div>
+  <div id="cart-items"></div>
 
-    <div class="cart-item">
-    <div class="cart-item-left">
-      <img src="assets/images/fidelguitar.png" alt="Fidel Guitar" class="cart-item-image" />
-      <div class="cart-item-info">
-        <h3 class="cart-item-name">Fidel Guitar</h3>
-        <p class="cart-item-qty">Qty: 1 <span class="qty-star">⭐</span> 4.5/5</p>
-        <div class="cart-qty-controls">
-          <button class="qty-btn">+</button>
-          <span class="qty-number">1</span>
-          <button class="qty-btn">-</button>
-        </div>
-      </div>
-    </div>
-    <div class="cart-item-price">$1990</div>
-  </div>
 
   <div class="cart-summary-wrapper">
-    
     <div class="cart-summary-left">
       <div class="cart-summary-line">
         <span>Item total:</span>
-        <span>$4990</span>
+        <span id="item-total">$0</span>
       </div>
       <div class="cart-summary-line">
         <span>Discount</span>
@@ -117,10 +76,9 @@
     </div>
 
     <div class="cart-summary-right">
-      <div class="final-total">Final total: $4990</div>
+      <div class="final-total">Final total: $<span id="final-total">0</span></div>
       <a href="payment.html" class="checkout-btn">Checkout</a>
     </div>
-
   </div>
 
 
@@ -144,6 +102,7 @@
   </div>
 </footer>
   
+  <script src="js/cart.js"></script>
   <script src="js/main.js"></script>
 
 </body>
