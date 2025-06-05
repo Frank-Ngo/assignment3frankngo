@@ -1,4 +1,3 @@
-// ✅ When page loads → display cart
 document.addEventListener('DOMContentLoaded', function() {
     displayCartItems();
 });
@@ -10,10 +9,8 @@ function displayCartItems() {
     let finalTotalSpan = document.getElementById('final-total');
     let cartCountText = document.querySelector('.cart-items-count');
 
-    // Clear existing
     cartItemsDiv.innerHTML = '';
 
-    // If cart is empty
     if (cart.length === 0) {
         cartItemsDiv.innerHTML = '<p>Your cart is empty.</p>';
         itemTotalSpan.textContent = '0';
@@ -22,7 +19,6 @@ function displayCartItems() {
         return;
     }
 
-    // Otherwise → build cart items
     let total = 0;
     let totalItems = 0;
 
@@ -51,13 +47,11 @@ function displayCartItems() {
         totalItems += item.quantity;
     });
 
-    // Update totals
     itemTotalSpan.textContent = `$${total}`;
     finalTotalSpan.textContent = total;
     cartCountText.textContent = `${totalItems} item${totalItems > 1 ? 's' : ''}`;
 }
 
-// ✅ Change quantity (+ / -)
 function changeQuantity(productId, change) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     let item = cart.find(item => item.id === productId);
@@ -67,7 +61,6 @@ function changeQuantity(productId, change) {
     item.quantity += change;
 
     if (item.quantity <= 0) {
-        // Remove item from cart
         cart = cart.filter(item => item.id !== productId);
         showToast('Item removed from cart.', 'error');
     } else {
@@ -75,6 +68,6 @@ function changeQuantity(productId, change) {
     }
 
     localStorage.setItem('cart', JSON.stringify(cart));
-    updateCartCount();  // Update global cart count
-    displayCartItems(); // Refresh cart page
+    updateCartCount();  
+    displayCartItems();
 }

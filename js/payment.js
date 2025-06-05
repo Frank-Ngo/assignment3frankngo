@@ -59,3 +59,45 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    displayPaymentCart();
+});
+
+function displayPaymentCart() {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let paymentItemsDiv = document.getElementById('payment-items');
+    let totalPriceSpan = document.getElementById('checkout-total');
+
+    paymentItemsDiv.innerHTML = '';
+
+    if (cart.length === 0) {
+        paymentItemsDiv.innerHTML = '<p>Your cart is empty.</p>';
+        totalPriceSpan.textContent = '$0';
+        return;
+    }
+
+    let total = 0;
+
+    cart.forEach(item => {
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'cart-item';  
+
+        itemDiv.innerHTML = `
+            <div class="cart-item-left">
+                <img src="${item.image}" alt="${item.name}" class="cart-item-image" />
+                <div class="cart-item-info">
+                    <p class="cart-item-name">${item.name}</p>
+                    <p class="cart-item-qty">Qty: ${item.quantity}</p>
+                    <div class="cart-item-price">$${item.price * item.quantity}</div>
+                </div>
+            </div>
+        `;
+
+        paymentItemsDiv.appendChild(itemDiv);
+
+        total += item.price * item.quantity;
+    });
+
+    totalPriceSpan.textContent = `$${total + 50}`;  
+}
