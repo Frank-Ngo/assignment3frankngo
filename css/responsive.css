@@ -203,27 +203,111 @@
     display: none !important;
     }
 
-    /* --- BOTTOM NAV --- */
-.bottom-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #FFB692;
+        /* --- BOTTOM NAV --- */
+    .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #FFB692;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.5rem 0;
+        z-index: 9999;
+        border-top: 1px solid #ccc;
+    }
+
+    .bottom-nav a img {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* --- PRODUCT TABS BAR --- */
+    .product-tabs-bar {
+        overflow-x: auto;
+        white-space: nowrap;
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        padding: 0.5rem 1rem;
+        border-top: 2px solid black;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .product-tabs ul {
+        display: flex;
+        gap: 2rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        white-space: nowrap;
+        width: max-content;
+        overflow-x: auto;
+    }
+
+    .product-tabs ul::-webkit-scrollbar {
+        display: none;
+    }
+
+
+
+    .product-tabs li {
+        cursor: pointer;
+        padding-bottom: 0.5rem;
+        font-size: 1rem;           
+        flex: 0 0 auto;            
+    }
+
+    .product-tabs li.active {
+        color: #ec6a5e;
+        border-bottom: 3px solid #ec6a5e;
+    }
+
+    .browse-category {
     display: flex;
-    justify-content: space-around;
+    gap: 1.5rem;
+    padding: 0.5rem 1rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100vw; 
+    margin-left: calc(-50vw + 50%); 
+    box-sizing: content-box; 
+    scrollbar-width: none; 
+}
+
+.browse-category::-webkit-scrollbar {
+    display: none; 
+}
+
+.filters-bar {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
     align-items: center;
-    padding: 0.5rem 0;
-    z-index: 9999;
-    border-top: 1px solid #ccc;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-bottom: 1px solid #eee;
 }
 
-.bottom-nav a img {
-    width: 24px;
-    height: 24px;
+.filters-bar .filter-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.7rem;
 }
 
-    
+.filters-bar .filter-icon img {
+    width: 16px;
+    height: 16px;
+}
+
+.filters-bar .filter-option {
+    font-size: 0.7rem;
+    cursor: pointer;
+    flex: 0 0 auto;
+}
+
+        
 
 
 }
