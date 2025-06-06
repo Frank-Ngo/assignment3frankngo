@@ -1,5 +1,6 @@
 @media (max-width: 768px) {
 
+    /* --- HEADER --- */
     .hamburger {
         display: block;
     }
@@ -42,17 +43,8 @@
         width: 24px;
         height: 24px;
     }
-}
 
-@media (min-width: 769px) {
-    .hamburger, .mobile-search {
-        display: none;
-    }
-}
-
-
-@media (max-width: 768px) {
-
+    /* --- VISIT OUR STORE --- */
     .visit-store {
         flex-direction: row;
         align-items: stretch;
@@ -62,8 +54,6 @@
         padding: 0; 
         gap: 0; 
     }
-
-
 
     .visit-left {
         flex: 1;
@@ -76,24 +66,35 @@
         font-family: 'Manrope', sans-serif;
     }
 
-
-        .visit-left-title {
+    .visit-left-title {
         display: flex;
+        flex-direction: row;
         align-items: center;
-        gap: 0.5rem;
-        font-size: 1.2rem; 
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
+        justify-content: flex-start;
+        gap: 0.3rem;
     }
 
+    .visit-left-title h2 {
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+
+    .visit-left-title .arrow img {
+        width: 16px;
+        height: auto;
+    }
+
+    .store-subtext {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        color: #333; 
+    }
 
     .visit-right {
         flex: 1;
         max-width: 50%;
         display: flex;
     }
-
 
     .visit-image {
         display: block;
@@ -102,8 +103,6 @@
         object-fit: cover; 
         border-radius: 8px;
     }
-
-
 
     .shop-btn-left {
         display: block;
@@ -116,16 +115,40 @@
         display: none;
     }
 
-    .store-subtext {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    color: #333; 
+    /* --- SERVICES SECTION --- */
+    .service-cards {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(180px, 1fr)) !important;
+        gap: 0.5rem !important;
+        padding: 0 1rem !important;
+    }
+
+    .service-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .service-card img {
+        width: 100% !important;
+        height: auto !important;
+        max-width: none !important;
+    }
+
+    .service-card p {
+        font-size: 2rem !important;
+        margin-top: 0.5rem !important;
+    }
+
+    .services h2 {
+        text-align: left;
+        padding-left: 2rem;
+        font-size: 2rem;
+        margin-left: -3rem;
+    }
 }
-
-}
-
-
-
 
 @media (min-width: 769px) {
 
@@ -141,6 +164,8 @@
         display: block;
     }
 
+    .hamburger, .mobile-search {
+        display: none;
+    }
+
 }
-
-
