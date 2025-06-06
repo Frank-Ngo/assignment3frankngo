@@ -1,0 +1,51 @@
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .mobile-search {
+        display: block;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    .search-container {
+        display: none;
+    }
+
+    .top-nav {
+        display: none;
+    }
+
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8rem 1rem;
+    }
+
+    .header-top h1 {
+        font-size: 2rem;
+        text-align: center;
+        flex: 1;
+    }
+
+    .hamburger img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .mobile-search img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburger, .mobile-search {
+        display: none;
+    }
+}
