@@ -12,15 +12,18 @@ function showToast(message, type = 'success') {
 
 function updateCartCount() {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    let countElement = document.getElementById('cart-count');
+    let countElements = document.querySelectorAll('.cart-count');
 
-    if (cart.length === 0) {
-        countElement.style.display = 'none';  
-    } else {
-        countElement.style.display = 'inline-block';  
-        countElement.textContent = cart.reduce((total, item) => total + item.quantity, 0);
-    }
+    countElements.forEach(countElement => {
+        if (cart.length === 0) {
+            countElement.style.display = 'none';
+        } else {
+            countElement.style.display = 'inline-block';
+            countElement.textContent = cart.reduce((total, item) => total + item.quantity, 0);
+        }
+    });
 }
+
 
 function addToCart(product) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];

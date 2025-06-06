@@ -360,8 +360,109 @@
 }
 
 
+.back-arrow {
+    position: absolute;
+    top: 5.3rem;
+    left: 1rem;
+    background-color: #E07F7F;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; 
+}
 
+.back-arrow img {
+    width: 20px;
+    height: 20px;
+}
 
+body.product-page .product-tabs-bar {
+    display: none;
+}
+    .product-detail-container {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1.5rem;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+        border-radius: 12px;
+        margin: 1rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-detail-image {
+        width: 100%;
+        background-color: white;
+        border-radius: 12px;
+        padding: 1rem;
+    }
+
+    .product-detail-image img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .product-detail-info {
+        width: 100%;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .product-detail-title {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #c62828; 
+    }
+
+    .product-detail-rating {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .product-detail-description {
+        font-size: 0.95rem;
+        color: #BC9999;
+        line-height: 1.4;
+    }
+
+    .product-detail-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    .product-detail-price {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: -0.8rem;
+    }
+
+    .product-detail-bottom .add-btn {
+        display: inline-block;
+        padding: 0.8rem 1.8rem;
+        font-size: 1rem;
+        font-weight: bold;
+        background-color: #c88;
+        color: white;
+        border-radius: 6px;
+        text-transform: capitalize;
+    }
+
+    .product-detail-info > .add-btn {
+        display: none;
+    }
 
 
 
@@ -389,6 +490,10 @@
     }
 
     .bottom-nav {
+    display: none;
+}
+
+.back-arrow {
     display: none;
 }
 

@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=Montserrat:wght@500;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body class="product-page">
   <header class="header">
     <div class="header-top">
       <div class="hamburger">
@@ -56,6 +56,10 @@
   </nav>
 </section>
 
+<a href="browse.html" class="back-arrow">
+    <img src="assets/icons/leftarrow.svg" alt="Back">
+</a>
+
 <section class="product-detail">
   <div class="product-detail-container">
 
@@ -66,10 +70,14 @@
     <div class="product-detail-info">
       <h2 class="product-detail-title">Star Platinum Requiem</h2>
       <p class="product-detail-rating">4.8/5 (29 reviews) ⭐⭐⭐⭐✰</p>
-      <p class="product-detail-price">$1990</p>
       <p class="product-detail-description">
         Dark and stylish with a smooth, modern sound. Built for precision, power, and performance that stands out.
       </p>
+      <div class="product-detail-bottom">
+        <p class="product-detail-price">$1990</p>
+        <button class="add-btn" onclick="addToCart({ id: 3, name: 'Star Platinum Requiem', price: 2700, image: 'assets/images/starplatinum.png' })">Add to Cart</button>
+      </div>
+
       <button class="add-btn" onclick="addToCart({ id: 3, name: 'Star Platinum Requiem', price: 2700, image: 'assets/images/starplatinum.png' })">Add to Cart</button>
 
     </div>
@@ -94,6 +102,16 @@
     <p>© 2025 Maxx Music. All rights reserved.</p>
   </div>
 </footer>
+
+<div class="bottom-nav">
+    <a href="#"><img src="assets/icons/user.svg" alt="User"></a>
+    <a href="cart.html">
+      <img src="assets/icons/cart.svg" alt="Cart" />
+      <span class="cart-count">0</span>
+    </a>
+    <a href="#"><img src="assets/icons/bookmark.svg" alt="Bookmark"></a>
+</div>
+
 
 <script src="js/main.js"></script>
 
