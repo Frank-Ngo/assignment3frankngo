@@ -132,7 +132,7 @@ transform: scale(1.03);
 }
 .service-card img {
   width: 100%;
-  height: auto;
+  height: 250px;
   border-radius: 6px;
   object-fit: cover;
   border: 2px solid black;
