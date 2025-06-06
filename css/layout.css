@@ -256,6 +256,15 @@ html {
   margin: 0 auto;
 }
 
+.browse-product-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 2rem 4rem;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .product-card {
   display: flex;
   flex-direction: column;

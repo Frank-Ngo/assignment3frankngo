@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function sortProductsByPrice() {
     const productCards = Array.from(document.querySelectorAll('.product-card'));
-    const productSection = document.querySelector('.product-cards');
+    const productSection = document.querySelector('.browse-product-cards');
 
     productCards.sort((a, b) => {
         const priceA = parseFloat(a.querySelector('.product-price').textContent.replace('$', ''));
@@ -74,7 +74,7 @@ function sortProductsByPrice() {
 
 function sortProductsByBestSelling() {
     const productCards = Array.from(document.querySelectorAll('.product-card'));
-    const productSection = document.querySelector('.product-cards');
+    const productSection = document.querySelector('.browse-product-cards');
 
     productCards.sort((a, b) => {
         const reviewsA = parseInt(a.querySelector('.product-rating').textContent.match(/\((\d+) reviews\)/)[1]);
@@ -90,7 +90,7 @@ function sortProductsByBestSelling() {
 
 function sortProductsByTopRated() {
     const productCards = Array.from(document.querySelectorAll('.product-card'));
-    const productSection = document.querySelector('.product-cards');
+    const productSection = document.querySelector('.browse-product-cards');
 
     productCards.sort((a, b) => {
         const ratingA = parseFloat(a.querySelector('.product-rating').textContent.match(/([\d.]+)\/5/)[1]);
@@ -106,7 +106,7 @@ function sortProductsByTopRated() {
 
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.querySelector('.search-input');
-    const productSection = document.querySelector('.product-cards');
+    const productSection = document.querySelector('.browse-product-cards');
 
     if (searchInput && productSection) {
         searchInput.addEventListener('input', function() {
