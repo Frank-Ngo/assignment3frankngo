@@ -332,9 +332,7 @@ html {
     align-items: flex-start;  
 }
 
-.product-detail-bottom .add-btn {
-    display: none;
-}
+
 
 
 .product-detail-image img {
@@ -351,6 +349,7 @@ html {
     align-items: flex-start;
     text-align: left;
     gap: 0.8rem;
+    
 }
 
 .product-detail-title {
@@ -435,7 +434,6 @@ html {
 .cart-item-info {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2.3rem;
 }
 
 .cart-item-name {
@@ -464,6 +462,7 @@ html {
 .cart-item-price {
   font-weight: 800;
   font-size: 2rem; 
+      align-self: center;    
 }
 
 .cart-summary-wrapper {

@@ -17,7 +17,15 @@
 <body>
   <header class="header">
     <div class="header-top">
+            <div class="hamburger">
+        <img src="assets/icons/hamburger.svg" alt="Menu" />
+      </div>
       <h1><a href="index.html">Maxx Music</a></h1>
+
+      
+      <div class="mobile-search">
+        <img src="assets/icons/search.svg" alt="Search" />
+      </div>
       <div class="header-right">
         <div class="search-container">
           <input type="text" class="search-input" placeholder="Search" />
@@ -26,7 +34,7 @@
         <a href="#"><img src="assets/icons/user.svg" alt="User" /></a>
         <a href="cart.html">
           <img src="assets/icons/cart.svg" alt="Cart" />
-          <span id="cart-count">0</span>
+          <span class="cart-count">0</span>
         </a>
         <a href="#"><img src="assets/icons/bookmark.svg" alt="Bookmark" /></a>
       </div>
@@ -48,8 +56,13 @@
   <main class="cart-section">
 
   <div class="cart-header">
-    <p class="cart-items-count">X items</p> 
+    
+  <a href="browse.html" class="back-arrow">
+    <img src="assets/icons/leftarrow.svg" alt="Back">
+  </a>
     <h2 class="cart-title">MY CART</h2>
+
+    <p class="cart-items-count">X items</p> 
   </div>
 
 
@@ -97,10 +110,22 @@
     <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook" /></a>
   </div>
 
+  
+
   <div class="footer-bottom">
     <p>© 2025 Maxx Music. All rights reserved.</p>
   </div>
 </footer>
+
+<div class="bottom-nav">
+    <a href="#"><img src="assets/icons/user.svg" alt="User"></a>
+    <a href="cart.html">
+      <img src="assets/icons/cart.svg" alt="Cart" />
+      <span class="cart-count">0</span>
+    </a>
+    <a href="#"><img src="assets/icons/bookmark.svg" alt="Bookmark"></a>
+</div>
+
   
   <script src="js/cart.js"></script>
   <script src="js/main.js"></script>
