@@ -1,118 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maxx Music</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maxx Music</title>
 
-  <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/typography.css" />
-  <link rel="stylesheet" href="css/colors.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/typography.css" />
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 
-  <!-- importing fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=Montserrat:wght@500;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
-
-</head>
-<body class="product-page">
-  <header class="header">
-    <div class="header-top">
-      <div class="hamburger">
-        <img src="assets/icons/hamburger.svg" alt="Menu" />
-      </div>
-
-      <h1><a href="index.html">Maxx Music</a></h1>
-
-      <div class="mobile-search">
-        <img src="assets/icons/search.svg" alt="Search" />
-      </div>
-      
-      <div class="header-right">
-        <div class="search-container">
-          <input type="text" class="search-input" placeholder="Search" />
-          <img src="assets/icons/search.svg" alt="Search" class="search-icon" />
+    <!-- importing fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=Montserrat:wght@500;600&family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="product-page">
+    <header class="header">
+      <div class="header-top">
+        <div class="hamburger">
+          <img src="assets/icons/hamburger.svg" alt="Menu" />
         </div>
-        <a href="#"><img src="assets/icons/user.svg" alt="User" /></a>
-        <a href="cart.html">
-          <img src="assets/icons/cart.svg" alt="Cart" />
-        <span class="cart-count">0</span>
-        </a>
-        <a href="#"><img src="assets/icons/bookmark.svg" alt="Bookmark" /></a>
+
+        <h1><a href="index.html">Maxx Music</a></h1>
+
+        <div class="mobile-search">
+          <img src="assets/icons/search.svg" alt="Search" />
+        </div>
+
+        <div class="header-right">
+          <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search" />
+            <img
+              src="assets/icons/search.svg"
+              alt="Search"
+              class="search-icon"
+            />
+          </div>
+          <a href="#"><img src="assets/icons/user.svg" alt="User" /></a>
+          <a href="cart.html">
+            <img src="assets/icons/cart.svg" alt="Cart" />
+            <span class="cart-count">0</span>
+          </a>
+          <a href="#"><img src="assets/icons/bookmark.svg" alt="Bookmark" /></a>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-   <div id="toast"></div>
- 
-<section class="product-tabs-bar">
-  <nav class="product-tabs">
-    <ul>
-      <li><a href="browse.html">FEATURED</a></li>
-      <li class="active">GUITARS</li>
-      <li>PEDALS</li>
-      <li>AMPS</li>
-      <li>PICKS</li>
-    </ul>
-  </nav>
-</section>
+    <div id="toast"></div>
 
-<a href="browse.html" class="back-arrow">
-    <img src="assets/icons/leftarrow.svg" alt="Back">
-</a>
+    <section class="product-tabs-bar">
+      <nav class="product-tabs">
+        <ul>
+          <li><a href="browse.html">FEATURED</a></li>
+          <li class="active">GUITARS</li>
+          <li>PEDALS</li>
+          <li>AMPS</li>
+          <li>PICKS</li>
+        </ul>
+      </nav>
+    </section>
 
-<section class="product-detail">
-  <div class="product-detail-container">
-
-    <div class="product-detail-image">
-      <img src="assets/images/starplatinum.png" alt="Star Platinum Requiem">
-    </div>
-
-    <div class="product-detail-info">
-      <h2 class="product-detail-title">Star Platinum Requiem</h2>
-      <p class="product-detail-rating">4.8/5 (29 reviews) ⭐⭐⭐⭐✰</p>
-      <p class="product-detail-description">
-        Dark and stylish with a smooth, modern sound. Built for precision, power, and performance that stands out.
-      </p>
-      <div class="product-detail-bottom">
-        <p class="product-detail-price">$1990</p>
-        <button class="add-btn" onclick="addToCart({ id: 3, name: 'Star Platinum Requiem', price: 2700, image: 'assets/images/starplatinum.png' })">Add to Cart</button>
-      </div>
-
-      <button class="add-btn" onclick="addToCart({ id: 3, name: 'Star Platinum Requiem', price: 2700, image: 'assets/images/starplatinum.png' })">Add to Cart</button>
-
-    </div>
-
-  </div>
-</section>
-
-<footer id="contact" class="footer">
-  <div class="footer-section contact">
-    <h4>Contact Us</h4>
-    <p>Email: support@maxxmusic.com</p>
-    <p>Phone: (123) 456-7890</p>
-  </div>
-
-  <div class="footer-section follow">
-    <h4>Follow Us</h4>
-    <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram" /></a>
-    <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook" /></a>
-  </div>
-
-  <div class="footer-bottom">
-    <p>© 2025 Maxx Music. All rights reserved.</p>
-  </div>
-</footer>
-
-<div class="bottom-nav">
-    <a href="#"><img src="assets/icons/user.svg" alt="User"></a>
-    <a href="cart.html">
-      <img src="assets/icons/cart.svg" alt="Cart" />
-      <span class="cart-count">0</span>
+    <a href="browse.html" class="back-arrow">
+      <img src="assets/icons/leftarrow.svg" alt="Back" />
     </a>
-    <a href="#"><img src="assets/icons/bookmark.svg" alt="Bookmark"></a>
-</div>
 
+    <section class="product-detail">
+      <div class="product-detail-container">
+        <div class="product-detail-image">
+          <img
+            src="assets/images/starplatinum.png"
+            alt="Star Platinum Requiem"
+          />
+        </div>
 
-<script src="js/main.js"></script>
+        <div class="product-detail-info">
+          <h2 class="product-detail-title">Star Platinum Requiem</h2>
+          <p class="product-detail-rating">4.8/5 (29 reviews) ⭐⭐⭐⭐✰</p>
+          <p class="product-detail-description">
+            Dark and stylish with a smooth, modern sound. Built for precision,
+            power, and performance that stands out.
+          </p>
+          <div class="product-detail-bottom">
+            <p class="product-detail-price">$1990</p>
+            <button
+              class="add-btn"
+              onclick="addToCart({ id: 3, name: 'Star Platinum Requiem', price: 2700, image: 'assets/images/starplatinum.png' })"
+            >
+              Add to Cart
+            </button>
+          </div>
 
-</body>
+          <button
+            class="add-btn"
+            onclick="addToCart({ id: 3, name: 'Star Platinum Requiem', price: 2700, image: 'assets/images/starplatinum.png' })"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="footer">
+      <div class="footer-section contact">
+        <h4>Contact Us</h4>
+        <p>Email: support@maxxmusic.com</p>
+        <p>Phone: (123) 456-7890</p>
+      </div>
+
+      <div class="footer-section follow">
+        <h4>Follow Us</h4>
+        <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram" /></a>
+        <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook" /></a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Maxx Music. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div class="bottom-nav">
+      <a href="#"><img src="assets/icons/user.svg" alt="User" /></a>
+      <a href="cart.html">
+        <img src="assets/icons/cart.svg" alt="Cart" />
+        <span class="cart-count">0</span>
+      </a>
+      <a href="#"><img src="assets/icons/bookmark.svg" alt="Bookmark" /></a>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

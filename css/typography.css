@@ -1,44 +1,38 @@
 header h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-size: 4rem;
   color: #212121;
   letter-spacing: -1px;
 }
 
-
-
-
-  
 .top-nav a {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 700;
   text-decoration: none;
   font-size: 1.7rem;
 }
 
 .shop-btn {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 2.8rem;
   text-decoration: none;
-
 }
-  
+
 .services h2 {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 600;
   font-size: 3rem;
 }
 
-
 .service-card {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 700;
 }
 
 .service-card p {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 700;
   font-size: 2rem;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
@@ -46,55 +40,54 @@ header h1 {
 
 .store-subtext {
   font-size: 1.1rem;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   color: #212121;
 }
 
 .visit-left h2 {
   font-size: 2.5rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav-links li a {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 700;
   text-decoration: none;
 }
 
 .new-arrivals h2 {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 600;
   font-size: 3rem;
 }
 
 .product-card p {
   margin-top: 1rem;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-  
 .product-tabs ul {
   font-size: 1.7rem;
-  font-weight: 700;  
+  font-weight: 700;
 }
 
 .product-tabs-bar {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .filters-bar {
-  font-family: 'Poppins', sans-serif; 
-  font-weight: 700;     
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
   font-weight: 600;
-  font-size: 1rem;              
+  font-size: 1rem;
 }
 
 .product-info .product-price {
-  font-size: 2.5rem; 
-  font-weight: 1200;  
+  font-size: 2.5rem;
+  font-weight: 1200;
 }
 
 .footer-section h4 {
@@ -109,32 +102,27 @@ header h1 {
   text-decoration: none;
 }
 
-
 .filter-option:hover {
   text-decoration: underline;
 }
 
 .add-btn {
   font-weight: 600;
-
 }
 
 .product-detail-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 3rem;
   font-weight: 800;
-
 }
 
 .product-detail-price {
-  font-size: 6rem;  
+  font-size: 6rem;
   font-weight: 700;
 }
 
-
 .product-detail-rating {
-    font-size: 1.2rem;
-
+  font-size: 1.2rem;
 }
 
 .product-detail-description {
@@ -146,30 +134,27 @@ header h1 {
   font-weight: 600;
 }
 
-
 .cart-items-count {
   font-size: 3rem;
   font-weight: 700;
 }
 
-
 .cart-title {
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
   font-weight: 800;
 }
 
 .cart-item {
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
 }
-
 
 .cart-item-name {
   font-weight: 800;
-  font-size: 1.8rem; 
+  font-size: 1.8rem;
 }
 
 .cart-item-qty {
-  font-size: 1.4rem; 
+  font-size: 1.4rem;
 }
 
 .qty-btn {
@@ -179,7 +164,7 @@ header h1 {
 
 .cart-item-price {
   font-weight: 800;
-  font-size: 2rem; 
+  font-size: 2rem;
 }
 
 .cart-summary-line {
@@ -187,9 +172,8 @@ header h1 {
   font-size: 2.5rem;
 }
 
-
-.discount-code { 
-  font-size: 1.2rem;   
+.discount-code {
+  font-size: 1.2rem;
 }
 
 .discount-code input {
@@ -201,10 +185,9 @@ header h1 {
   font-size: 2.5rem;
 }
 
-
 .checkout-btn {
-  text-decoration: none; 
-  font-family: inherit;  
+  text-decoration: none;
+  font-family: inherit;
   font-weight: 800;
   font-size: 4.5rem;
 }
@@ -214,7 +197,6 @@ header h1 {
   font-weight: 800;
 }
 
-
 .checkout-item {
   font-size: 1.5rem;
 }
@@ -222,7 +204,6 @@ header h1 {
 .checkout-left h3 {
   font-size: 2rem;
 }
-
 
 .checkout-item-name {
   font-weight: 800;
@@ -234,22 +215,19 @@ header h1 {
   font-size: 2rem;
 }
 
-
 .order-summary {
   font-size: 1.2rem;
 }
 
 .confirmation-title {
   font-weight: 700;
-  font-size: 2rem; 
-
+  font-size: 2rem;
 }
 
 .confirmation-subtext {
-  font-size: 1.4rem; 
+  font-size: 1.4rem;
   line-height: 1.6;
 }
-
 
 .confirm-btn {
   font-weight: 800;
@@ -259,17 +237,14 @@ header h1 {
 }
 
 .footer {
-
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .error-message {
   font-size: 0.9rem;
 }
 
-
-
 #toast {
-    font-weight: bold;
-    font-size: 1.2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
 }

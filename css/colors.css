@@ -1,34 +1,32 @@
 body {
-  background-color: #FFF8F5;
+  background-color: #fff8f5;
   color: #333;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   margin: 0;
 }
 
 header {
-  background-color: #FFECE8;
+  background-color: #ffece8;
 }
 
 .top-nav {
-  background-color: #FFEBEB;
+  background-color: #ffebeb;
 }
 
 .top-nav a {
   color: #000000;
 }
 
-
-
 .header h1 a {
   color: inherit;
 }
 
 .hero {
-  background-color: #FFF3ED;
+  background-color: #fff3ed;
 }
 
 .shop-btn {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .services {
@@ -36,7 +34,7 @@ header {
 }
 
 .services h2 {
-  color: #9B6634;
+  color: #9b6634;
 }
 
 .new-arrivals {
@@ -44,13 +42,12 @@ header {
 }
 
 .service-card {
-  color: #68380A;
+  color: #68380a;
 }
 
 .service-card p {
-  color: #68380A;
+  color: #68380a;
 }
-
 
 .visit-left h2 {
   color: #212121;
@@ -61,57 +58,53 @@ header {
 }
 
 .new-arrivals h2 {
-  color: #9B6634;
+  color: #9b6634;
 }
 
 .product-card p {
-  color: #68380A;
+  color: #68380a;
 }
 
 .bottom-nav {
-  background-color: #FFEBEB;
+  background-color: #ffebeb;
 }
-
 
 .header-top {
-    background-color: #FFECE8;
+  background-color: #ffece8;
 }
 
-
 .visit-store {
-    background-color: #FFF3ED;
+  background-color: #fff3ed;
 }
 
 .services {
-    background-color: #fff9f5;
+  background-color: #fff9f5;
 }
 
 a {
-  color:inherit;
+  color: inherit;
 }
 
-
 .search-input {
-background-color: #e9dcd9;
+  background-color: #e9dcd9;
 }
 
 .visit-store {
-background-color: #FFF3ED;
+  background-color: #fff3ed;
 }
 
-
 .shop-btn {
-background-color: #EB988E;
-color: white;
+  background-color: #eb988e;
+  color: white;
 }
 
 .footer {
-  background-color: #FFF3ED;
-  color: #68380A;
+  background-color: #fff3ed;
+  color: #68380a;
 }
 
 .product-tabs-bar {
-  background-color: #FFECE8;
+  background-color: #ffece8;
 }
 
 .product-tabs .active {
@@ -127,20 +120,17 @@ color: white;
 }
 
 .product-card {
-  background-color: #FFF7F4;
+  background-color: #fff7f4;
 }
 
 .product-image {
   background-color: #ffffff;
   border: 2px solid black;
-
 }
-
 
 .product-card img {
   border: 2px solid #000;
 }
-
 
 .product-tabs .active {
   border-bottom: 2px solid #ef5c5c;
@@ -151,13 +141,12 @@ color: white;
   color: black;
 }
 
-
 .product-info .product-name {
-  color: #B81919;
+  color: #b81919;
 }
 
 .add-btn {
-  background-color: #B87C7C;
+  background-color: #b87c7c;
   color: white;
 }
 
@@ -169,9 +158,8 @@ color: white;
   background-color: #fff9f5;
 }
 
-
 .product-detail-title {
-  color: #B81919;
+  color: #b81919;
 }
 
 .product-detail-price {
@@ -179,18 +167,16 @@ color: white;
 }
 
 .product-detail-rating {
-    color: #212121;
+  color: #212121;
 }
 
 .product-detail-description {
-  color: #BC9999;
+  color: #bc9999;
 }
 
-
 .product-detail-info .add-btn {
-  background-color: #B87C7C;
+  background-color: #b87c7c;
   color: white;
-
 }
 
 .product-detail-info .add-btn:hover {
@@ -198,53 +184,41 @@ color: white;
 }
 
 .cart-section {
-  background-color: #fff9f5;  
+  background-color: #fff9f5;
 }
 
 .cart-item {
   border: 2px solid #ddd;
 }
 
-
 .cart-item-name {
-  color: #B81919;
+  color: #b81919;
 }
-
 
 .cart-item-image {
-  border: 2px solid #B81919;
+  border: 2px solid #b81919;
 }
 
-
-
 .qty-btn {
-  background-color: #F0C0C0;
+  background-color: #f0c0c0;
 }
 
 .discount-code {
-
   background-color: #e7e1df;
-
 }
-
 
 .discount-code button {
   background-color: #c5b4b1;
-
 }
 
 .final-total {
-  background-color: #FFD3D3;
-
+  background-color: #ffd3d3;
 }
 
 .checkout-btn {
-
   background-color: #fecbcb;
-  color: #F36161;
+  color: #f36161;
   border: 2px solid #d15858;
-
-
 }
 
 .checkout-btn:hover {
@@ -253,26 +227,20 @@ color: white;
 
 .shipping-info {
   background-color: #f9f9f9;
-
 }
 
 .payment-option {
-
   background-color: #d9d9d9;
-
 }
 
 .input-error {
-    border: 2px solid red;
-    background-color: #ffe6e6;
+  border: 2px solid red;
+  background-color: #ffe6e6;
 }
 
-
 .payment-option .circle {
-
   background-color: white;
   border: 2px solid #aaa;
-
 }
 
 .card-details input {
@@ -283,39 +251,30 @@ color: white;
   border: 2px solid #ddd;
 }
 
-
 .checkout-item-image {
-  border: 2px solid #B81919;
+  border: 2px solid #b81919;
 }
 
 .checkout-item-name {
-
-  color: #B81919;
+  color: #b81919;
 }
 
 .checkout-item-price {
-
   color: black;
 }
 
 .order-summary {
-  background-color: #FFF7F0;
-
-
+  background-color: #fff7f0;
 }
 
 .confirmation-subtext {
   color: #999;
-
 }
-
 
 .confirm-btn {
   color: #d15858;
   background-color: #fecbcb;
   border: 2px solid #d15858;
-
-
 }
 
 .confirm-btn:hover {
@@ -332,18 +291,14 @@ color: white;
 }
 
 #toast.error {
-    background-color: #f44336; 
+  background-color: #f44336;
 }
-
 
 #toast {
-
-    background-color: #333;
-    color: #fff;
+  background-color: #333;
+  color: #fff;
 }
-
 
 #toast.success {
-    background-color: #4CAF50;  
+  background-color: #4caf50;
 }
-

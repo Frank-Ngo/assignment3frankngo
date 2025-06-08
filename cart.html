@@ -1,134 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maxx Music</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maxx Music</title>
 
-  <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/typography.css" />
-  <link rel="stylesheet" href="css/colors.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/typography.css" />
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 
-  <!-- importing fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=Montserrat:wght@500;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
-
-</head>
-<body>
-  <header class="header">
-    <div class="header-top">
-      <div class="hamburger">
-        <img src="assets/icons/hamburger.svg" alt="Menu" />
-      </div>
-      <h1><a href="index.html">Maxx Music</a></h1>
-
-      
-      <div class="mobile-search">
-        <img src="assets/icons/search.svg" alt="Search" />
-      </div>
-      <div class="header-right">
-        <div class="search-container">
-          <input type="text" class="search-input" placeholder="Search" />
-          <img src="assets/icons/search.svg" alt="Search" class="search-icon" />
+    <!-- importing fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=Montserrat:wght@500;600&family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="hamburger">
+          <img src="assets/icons/hamburger.svg" alt="Menu" />
         </div>
-        <a href="#"><img src="assets/icons/user.svg" alt="User" /></a>
-        <a href="cart.html">
-          <img src="assets/icons/cart.svg" alt="Cart" />
-          <span class="cart-count">0</span>
+        <h1><a href="index.html">Maxx Music</a></h1>
+
+        <div class="mobile-search">
+          <img src="assets/icons/search.svg" alt="Search" />
+        </div>
+        <div class="header-right">
+          <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search" />
+            <img
+              src="assets/icons/search.svg"
+              alt="Search"
+              class="search-icon"
+            />
+          </div>
+          <a href="#"><img src="assets/icons/user.svg" alt="User" /></a>
+          <a href="cart.html">
+            <img src="assets/icons/cart.svg" alt="Cart" />
+            <span class="cart-count">0</span>
+          </a>
+          <a href="#"><img src="assets/icons/bookmark.svg" alt="Bookmark" /></a>
+        </div>
+      </div>
+
+      <nav class="top-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="browse.html">SALES</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="toast"></div>
+
+    <main class="cart-section">
+      <div class="cart-header">
+        <a href="browse.html" class="back-arrow">
+          <img src="assets/icons/leftarrow.svg" alt="Back" />
         </a>
-        <a href="#"><img src="assets/icons/bookmark.svg" alt="Bookmark" /></a>
+        <h2 class="cart-title">MY CART</h2>
+
+        <p class="cart-items-count">X items</p>
       </div>
+
+      <div id="cart-items"></div>
+
+      <div class="cart-summary-wrapper">
+        <div class="cart-summary-left">
+          <div class="cart-summary-line">
+            <span>Item total:</span>
+            <span id="item-total">$0</span>
+          </div>
+          <div class="cart-summary-line">
+            <span>Discount</span>
+            <span>–</span>
+          </div>
+
+          <div class="discount-code">
+            <input type="text" placeholder="Enter discount code" />
+            <button>
+              <img
+                src="assets/icons/check.svg"
+                alt="Apply Discount"
+                style="width: 20px; height: 20px"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="cart-summary-right">
+          <div class="final-total">
+            Final total: $<span id="final-total">0</span>
+          </div>
+          <a href="payment.html" class="checkout-btn">Checkout</a>
+        </div>
+      </div>
+    </main>
+
+    <footer id="contact" class="footer">
+      <div class="footer-section contact">
+        <h4>Contact Us</h4>
+        <p>Email: support@maxxmusic.com</p>
+        <p>Phone: (123) 456-7890</p>
+      </div>
+
+      <div class="footer-section follow">
+        <h4>Follow Us</h4>
+        <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram" /></a>
+        <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook" /></a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Maxx Music. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div class="bottom-nav">
+      <a href="#"><img src="assets/icons/user.svg" alt="User" /></a>
+      <a href="cart.html">
+        <img src="assets/icons/cart.svg" alt="Cart" />
+        <span class="cart-count">0</span>
+      </a>
+      <a href="#"><img src="assets/icons/bookmark.svg" alt="Bookmark" /></a>
     </div>
-  
-    <nav class="top-nav">
-      <ul class="nav-links">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="browse.html">SALES</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <div id="toast"></div>
-
-
-  <main class="cart-section">
-
-  <div class="cart-header">
-    
-  <a href="browse.html" class="back-arrow">
-    <img src="assets/icons/leftarrow.svg" alt="Back">
-  </a>
-    <h2 class="cart-title">MY CART</h2>
-
-    <p class="cart-items-count">X items</p> 
-  </div>
-
-
-  <div id="cart-items"></div>
-
-
-  <div class="cart-summary-wrapper">
-    <div class="cart-summary-left">
-      <div class="cart-summary-line">
-        <span>Item total:</span>
-        <span id="item-total">$0</span>
-      </div>
-      <div class="cart-summary-line">
-        <span>Discount</span>
-        <span>–</span>
-      </div>
-
-      <div class="discount-code">
-        <input type="text" placeholder="Enter discount code" />
-        <button>
-          <img src="assets/icons/check.svg" alt="Apply Discount" style="width: 20px; height: 20px;">
-        </button>
-      </div>
-    </div>
-
-    <div class="cart-summary-right">
-      <div class="final-total">Final total: $<span id="final-total">0</span></div>
-      <a href="payment.html" class="checkout-btn">Checkout</a>
-    </div>
-  </div>
-
-
-</main>
-
-<footer id="contact" class="footer">
-  <div class="footer-section contact">
-    <h4>Contact Us</h4>
-    <p>Email: support@maxxmusic.com</p>
-    <p>Phone: (123) 456-7890</p>
-  </div>
-
-  <div class="footer-section follow">
-    <h4>Follow Us</h4>
-    <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram" /></a>
-    <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook" /></a>
-  </div>
-
-  
-
-  <div class="footer-bottom">
-    <p>© 2025 Maxx Music. All rights reserved.</p>
-  </div>
-</footer>
-
-<div class="bottom-nav">
-    <a href="#"><img src="assets/icons/user.svg" alt="User"></a>
-    <a href="cart.html">
-      <img src="assets/icons/cart.svg" alt="Cart" />
-      <span class="cart-count">0</span>
-    </a>
-    <a href="#"><img src="assets/icons/bookmark.svg" alt="Bookmark"></a>
-</div>
-
-  
-  <script src="js/cart.js"></script>
-  <script src="js/main.js"></script>
-
-</body>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
