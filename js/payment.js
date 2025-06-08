@@ -16,14 +16,14 @@ document.addEventListener('DOMContentLoaded', function () {
         const paymentSelected = document.querySelector('input[name="payment-method"]:checked');
         const nameRegex = /^[A-Za-z\s]+$/;
 
-
+        // VALIDATIONS
         if (!paymentSelected) {
             document.getElementById('error-payment-method').textContent = 'Please select a payment method.';
             isValid = false;
         } else {
             document.getElementById('error-payment-method').textContent = '';
         }
-        
+
         if (name === '') {
             document.getElementById('error-card-name').textContent = 'Name on card is required.';
             document.getElementById('card-name').classList.add('input-error');
@@ -55,43 +55,55 @@ document.addEventListener('DOMContentLoaded', function () {
             isValid = false;
         }
 
-        // If everything is valid then lets go to confirmation page
         if (isValid) {
             const selectedPaymentMethod = document.querySelector('input[name="payment-method"]:checked');
             const paymentMethod = selectedPaymentMethod ? selectedPaymentMethod.value : 'Unknown';
 
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let correctTotal = 0;
+
+            cart.forEach(item => {
+                correctTotal += item.price * item.quantity;
+            });
+
             localStorage.setItem('paymentMethod', paymentMethod);
-            localStorage.setItem('finalTotal', total + 50);  
+            localStorage.setItem('finalTotal', correctTotal + 50);  
             window.location.href = 'confirmation.html';
         }
-
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     displayPaymentCart();
 });
 
 function displayPaymentCart() {
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    const paymentItemsDiv = document.getElementById("payment-items");
-    paymentItemsDiv.innerHTML = "";
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let paymentItemsDiv = document.getElementById('payment-items');
+    let totalPriceSpan = document.getElementById('checkout-total');
 
-    let total = 0;
+    paymentItemsDiv.innerHTML = '';
+
+    if (cart.length === 0) {
+        paymentItemsDiv.innerHTML = '<p>Your cart is empty.</p>';
+        totalPriceSpan.textContent = '$0';
+        return;
+    }
+
+    total = 0;
 
     cart.forEach(item => {
-        const itemDiv = document.createElement("div");
-        itemDiv.className = "cart-item";
-
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'checkout-item'; 
         itemDiv.innerHTML = `
-            <div class="cart-item-left">
-                <img src="${item.image}" alt="${item.name}" class="cart-item-image">
-                <div class="cart-item-info">
-                    <p class="cart-item-name">${item.name}</p>
+            <div class="checkout-item-left">
+                <img src="${item.image}" alt="${item.name}" class="checkout-item-image" />
+                <div class="checkout-item-info">
+                    <p class="checkout-item-name">${item.name}</p>
                     <p class="cart-item-qty">Qty: ${item.quantity}</p>
+                    <div class="checkout-item-price">$${item.price * item.quantity}</div>
                 </div>
             </div>
-            <div class="cart-item-price">$${item.price * item.quantity}</div>
         `;
 
         paymentItemsDiv.appendChild(itemDiv);
@@ -99,5 +111,5 @@ function displayPaymentCart() {
         total += item.price * item.quantity;
     });
 
-    document.getElementById("checkout-total").textContent = `$${total + 50}`;
+    totalPriceSpan.textContent = `$${total + 50}`;
 }
